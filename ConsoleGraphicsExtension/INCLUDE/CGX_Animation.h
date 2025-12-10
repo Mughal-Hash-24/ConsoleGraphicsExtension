@@ -1,20 +1,18 @@
 #pragma once
 #include "CGX_Image.h"
+#include "CGX_Vector.h"
 #include <string>
 
 namespace CGX {
     class Animation {
     private:
-        Image** frames; // Array of pointers to Image objects
-        int numFrames;
+        // OPTIMIZATION: Store Images by value to ensure contiguous memory
+        Vector<Image> frames;
         bool loaded;
         int currentFrame;
 
-        void clearMemory();
-        void resetPlaybackState();
-
     public:
-        Animation(); // Default constructor added for safety
+        Animation();
         Animation(const std::string& filepath);
         ~Animation();
 

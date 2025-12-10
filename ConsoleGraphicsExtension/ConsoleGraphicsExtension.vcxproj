@@ -123,19 +123,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CGX_Animation.h" />
-    <ClInclude Include="CGX_Core.h" />
-    <ClInclude Include="CGX_Image.h" />
-    <ClInclude Include="CGX_Utils.h" />
-    <ClInclude Include="CGX_Vector.h" />
-    <ClInclude Include="CGX_Window.h" />
+    <ClCompile Include="CORE\CGX_Animation.cpp" />
+    <ClCompile Include="CORE\CGX_Audio.cpp" />
+    <ClCompile Include="CORE\CGX_Button.cpp" />
+    <ClCompile Include="CORE\CGX_Geometry.cpp" />
+    <ClCompile Include="CORE\CGX_Image.cpp" />
+    <ClCompile Include="CORE\CGX_Text.cpp" />
+    <ClCompile Include="CORE\CGX_Utils.cpp" />
+    <ClCompile Include="CORE\CGX_Window.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CGX_Animation.cpp" />
-    <ClCompile Include="CGX_Image.cpp" />
-    <ClCompile Include="CGX_Utils.cpp" />
-    <ClCompile Include="CGX_Window.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClInclude Include="INCLUDE\CGX_Animation.h" />
+    <ClInclude Include="INCLUDE\CGX_Audio.h" />
+    <ClInclude Include="INCLUDE\CGX_Button.h" />
+    <ClInclude Include="INCLUDE\CGX_Core.h" />
+    <ClInclude Include="INCLUDE\CGX_FontData.h" />
+    <ClInclude Include="INCLUDE\CGX_Geometry.h" />
+    <ClInclude Include="INCLUDE\CGX_Image.h" />
+    <ClInclude Include="INCLUDE\CGX_Text.h" />
+    <ClInclude Include="INCLUDE\CGX_Utils.h" />
+    <ClInclude Include="INCLUDE\CGX_Vector.h" />
+    <ClInclude Include="INCLUDE\CGX_Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

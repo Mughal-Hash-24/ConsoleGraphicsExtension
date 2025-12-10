@@ -10,7 +10,11 @@ namespace CGX {
 
         // FPS Control
         void setFrameRate(int fps);
-        int getFrameDelayMs();
+		int getFrameDelayMs();
         void sleepForFrame();
+
+        // NEW: Mouse Input
+        void getMousePos(int& x, int& y);
+        bool isMousePressed();
     }
 }
